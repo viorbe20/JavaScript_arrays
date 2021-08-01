@@ -1,2 +1,2 @@
 # JavaScript_arrays
-Métodos útiles para arrays
+Utilidades para arrays en JavaScript
