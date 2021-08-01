@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Virginia Ordoño Bernier">
+    <meta name="date" content="August 2021">
+    <meta name="content" content="Arrays: push() method">
+    <title>push() Method</title>
+    <style type="text/css">
+        h1 {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 60px;
+        }
+
+        p {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>array.push()</h1>
+    <hr>
+    <p>Añade uno o más elementos al final del array y devuelve el tamaño del array</p>
+
+    <img src="img/push_img.png">
+
+    <script type='text/javascript'>
+        var week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+        console.log("Week: " + week);
+
+        week.push("Saturday", "Sunday");
+        console.log("Week: " + week);
+
+        var weekLength = week;
+        console.log(weekLength);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Virginia Ordoño Bernier">
+    <meta name="date" content="August 2021">
+    <meta name="content" content="Arrays: concat() method">
+    <title>concat() Method</title>
+    <style type="text/css">
+        h1 {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 60px;
+        }
+
+        p {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>array.concat()</h1>
+    <hr>
+    <p>Une dos o más arrays y devuelve un nuevo array que contiene esos valores.</p>
+
+    <img src="img/concat_img.png">
+
+    <script type='text/javascript'>
+        var weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+        var weekend = ["Saturday", "Sunday"];
+        console.log("Weekdays: " + weekdays);
+        console.log("Weekend: " + weekend);
+
+        var week = weekdays.concat(weekend);
+        console.log("Week: " + week);
+
+        var weekLength = week;
+        console.log(weekLength);
+    </script>
+</body>
+
+</html>
