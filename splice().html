@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Virginia Ordoño Bernier">
+    <meta name="date" content="August 2021">
+    <meta name="content" content="Arrays: splice() method">
+    <title>splice() Method</title>
+    <style type="text/css">
+        h1 {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 60px;
+        }
+
+        p,
+        li {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>array.splice()</h1>
+    <hr>
+    <p>Elimina o añade elementos de un array cambiando el contenido del mismo.</p>
+    <p>Parámetros:</p>
+    <li>Primer número: indica el índice de inicio que se quiere modificar.</li>
+    <li>Segundo número: indica la cantidad de elementos a partir del índice de inicio indicado.</li>
+    <br>
+
+    <img src="img/splice_img.png">
+
+    <script type='text/javascript'>
+        var week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+        console.log("Contenido de 'week'");
+        console.log(week);
+        console.log("");
+        
+        console.log("Splice(5): mantiene en el array las 5 primeras posiciones y elimina el resto.");
+        var splice1 = week.splice(5);
+        console.log(splice1);
+        console.log("Ahora 'week' contiene lo siguiente:");
+        console.log(week);
+        console.log("");
+        
+        console.log("Splice(1,2): mantiene desde el índice 1, dos posiciones. El resto lo elimina.");
+        var splice2 = week.splice(1, 2);
+        console.log(splice2);
+        console.log("Ahora 'week' contiene lo siguiente:");
+        console.log(week);
+    </script>
+</body>
+
+</html>

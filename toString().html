@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Virginia Ordoño Bernier">
     <meta name="date" content="August 2021">
-    <meta name="content" content="Arrays: concat() method">
-    <title>concat() Method</title>
+    <meta name="content" content="Arrays: toString() method">
+    <title>toString() Method</title>
     <style type="text/css">
         h1 {
             background-color: #4CAF50;
@@ -21,32 +21,29 @@
             font-size: 60px;
         }
 
-        p {
+        p,
+        li {
             font-size: 30px;
         }
     </style>
 </head>
 
 <body>
-    <h1>array.concat()</h1>
+    <h1>array.toString()</h1>
     <hr>
-    <p>Une dos o más arrays y devuelve un nuevo array que contiene esos valores.</p>
+    <p>Devuelve los valores del array como cadena.</p>
+    <br>
 
-    <img src="img/concat_img.png">
+    <img src="img/toString_img.png">
 
     <script type='text/javascript'>
-        var weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
-        console.log("Contenido de 'weekdays'");
-        console.log(weekdays);
+        var week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+        console.log("Contenido de 'week'");
+        console.log(week);
         console.log("");
 
-        var weekend = ["Saturday", "Sunday"];
-        console.log("Contenido de 'weekend'");
-        console.log(weekend);
-        console.log("");
-
-        console.log("'weekdays.concat(weekend)'' muestra lo siguiente:'");
-        console.log(weekdays.concat(weekend));
+        console.log("toString()");
+        console.log(week.toString());
     </script>
 </body>
 

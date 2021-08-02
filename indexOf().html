@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Virginia Ordoño Bernier">
     <meta name="date" content="August 2021">
-    <meta name="content" content="Arrays: concat() method">
-    <title>concat() Method</title>
+    <meta name="content" content="Arrays: indexOf() method">
+    <title>indexOf() Method</title>
     <style type="text/css">
         h1 {
             background-color: #4CAF50;
@@ -28,25 +28,26 @@
 </head>
 
 <body>
-    <h1>array.concat()</h1>
+    <h1>array.indexOf()</h1>
     <hr>
-    <p>Une dos o más arrays y devuelve un nuevo array que contiene esos valores.</p>
+    <p>Devuelve la posición del elemento indicado. Si no se encuentra, devuelve un número negativo.</p>
+    <br>
 
-    <img src="img/concat_img.png">
+    <img src="img/indexOf_img.png">
 
     <script type='text/javascript'>
-        var weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
-        console.log("Contenido de 'weekdays'");
-        console.log(weekdays);
+        var week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+        console.log("Contenido de 'week'.");
+        console.log(week);
         console.log("");
 
-        var weekend = ["Saturday", "Sunday"];
-        console.log("Contenido de 'weekend'");
-        console.log(weekend);
+        console.log("Resultado de week.indexOf('Wednesday')");
+        console.log(week.indexOf('Wednesday'));
         console.log("");
 
-        console.log("'weekdays.concat(weekend)'' muestra lo siguiente:'");
-        console.log(weekdays.concat(weekend));
+        console.log("Resultado de week.indexOf('wednesday')");
+        console.log(week.indexOf('wednesday'));
+        console.log("");
     </script>
 </body>
 

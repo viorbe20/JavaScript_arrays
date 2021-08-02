@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Virginia Ordoño Bernier">
+    <meta name="date" content="August 2021">
+    <meta name="content" content="Arrays: includes() method">
+    <title>includes() Method</title>
+    <style type="text/css">
+        h1 {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 60px;
+        }
+
+        p {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>array.includes()</h1>
+    <hr>
+    <p>Devuelve 'true' o 'false' en función de si el elemento indicado existe o no.</p>
+    <p>Puede indicarse la posición desde la que tiene que empezar a buscar.</p>
+    <br>
+
+    <img src="img/includes_img.png">
+
+    <script type='text/javascript'>
+        var week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+        console.log("Contenido de 'week'");
+        console.log(week);
+        console.log("");
+
+        console.log("week.includes('Monday') devuelve lo siguiente:");
+        console.log(week.includes('Monday'));
+        console.log("");
+
+        console.log("week.includes('Monday', 2) devuelve lo siguiente:");
+        console.log(week.includes('Monday', 2));
+        console.log("");
+
+        console.log("week.includes('January') devuelve lo siguiente:");
+        console.log(week.includes('January'));
+        console.log("");
+    </script>
+</body>
+
+</html>

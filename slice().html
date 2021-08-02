@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Virginia Ordoño Bernier">
+    <meta name="date" content="August 2021">
+    <meta name="content" content="Arrays: slice() method">
+    <title>slice() Method</title>
+    <style type="text/css">
+        h1 {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 60px;
+        }
+
+        p {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>array.slice()</h1>
+    <hr>
+    <p>Extrae una cadena de un array y la devuelve. El array original no queda afectado.</p>
+    <p>Parámetros: índices de inicio y de fin (este menos 1). Un índice negativo indica la posición desde el final del
+        array.</p>
+
+    <img src="img/slice_img.png">
+
+    <script type='text/javascript'>
+        var week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+        console.log("Contenido de 'week'");
+        console.log(week);
+        console.log("");
+
+        var slice1 = week.slice(0, 5);
+        var slice2 = week.slice(2);
+        var slice3 = week.slice(-2);
+
+        console.log("Slice(0,5): muestra desde la posición 0, 5 elementos seguidos.");
+        console.log(slice1);
+        console.log("El contenido de 'week' no cambia:");
+        console.log(week);
+        console.log("");
+
+        console.log("Slice(2): muestra desde la posición 2 hasta el final del array.");
+        console.log(slice2);
+        console.log("El contenido de 'week' no cambia:");
+        console.log(week);
+        console.log("");
+
+        console.log("Slice(-2): muestra dos posiciones empezando desde el último elemento.");
+        console.log(slice3);
+        console.log("El contenido de 'week' no cambia:");
+        console.log(week);
+    </script>
+</body>
+
+</html>
